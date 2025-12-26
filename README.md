@@ -1,6 +1,5 @@
 # DCW-Cascade-Wave
 Fluid dynamics
-[20_Elevator_Pitch.txt](https://github.com/user-attachments/files/24341911/20_Elevator_Pitch.txt)
 DEARMAN CASCADE WAVE (DCW)
 ===========================================
 
