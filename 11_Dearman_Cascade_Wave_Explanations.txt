@@ -1,0 +1,29 @@
+Base-level explanations (intro-friendly)
+
+1) What is magnetism?
+Magnetism is a force associated with moving electric charges. When charges move (like electrons orbiting atoms or flowing in a wire), they create a magnetic field. Magnetic fields can push or pull on other magnets and on moving charges.
+
+2) Harmonics and resonance (simple view)
+Any vibration can be broken into a set of simple tones called harmonics. If two systems have compatible (matching or related) frequencies, they can resonate—energy transfers more easily, and the response becomes stronger.
+
+3) Fields as the medium for interaction
+A field is a way to describe how forces act across space. The magnetic field tells us the direction and strength of magnetic influence at each point. When systems share a field environment and their oscillations align, their interactions can increase.
+
+4) Putting the ideas together (Dearman's framing)
+If everything has some oscillatory behavior (even subtle), then each system could have a small magnetic or magnetism-like response. When frequencies align (harmonize), resonance can make the interaction stronger, leading to attraction or organization within the same field structure.
+
+5) Important note
+This synthesis is an intuitive, entry-level explanation. Parts of it align with known physics (fields, resonance); other parts (universal magnetism claim) are a hypothesis and would need clear definitions, measurements, and experiments to establish.
+
+RELATION TO DIM MODEL:
+
+The DIM (Dimensional Invariant Modulation) model applies similar principles to fluid dynamics:
+- Vortex flows have natural frequencies (precession, rotation)
+- DIM amplifies specific harmonic frequencies (3-6-9 patterns, 124875 sequences)
+- When these frequencies resonate, the flow behavior changes dramatically:
+  * Vortex breakdown is delayed
+  * Circulation is amplified
+  * New spectral peaks appear
+
+This is analogous to how magnetic systems respond when their frequencies align—the interaction becomes stronger and more organized.
+

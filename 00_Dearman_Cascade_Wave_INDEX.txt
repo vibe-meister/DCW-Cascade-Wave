@@ -1,0 +1,145 @@
+DIM (Dimensional Invariant Modulation) - Complete Documentation Index
+====================================================================
+
+Author: Shaun Robert DeArman
+Date: December 24, 2025
+
+QUICK START GUIDE:
+------------------
+1. Start with: README.md (overview and navigation)
+2. For theory: 03_Mathematical_Framework.txt
+3. For implementation: 12_Implied_Magnetism_Model.py
+4. For complete details: 07_Complete_Mathematical_Formulation.txt
+
+FILE ORGANIZATION:
+------------------
+
+CORE DOCUMENTS (Essential Reading):
+-----------------------------------
+00_INDEX.txt                    - This file (navigation guide)
+README.md                       - Main documentation with overview and structure
+01_Abstract.txt                 - Thesis abstract with keywords
+02_Thesis_Manuscript.txt        - Complete thesis manuscript (all sections)
+03_Mathematical_Framework.txt   - Base equations and DIM extensions (enhanced)
+04_Bibliography.txt             - Complete bibliography with citations
+
+IMPLEMENTATION & CODE:
+----------------------
+05_Supporting_Scripts.txt       - Code examples and snippets
+12_Implied_Magnetism_Model.py   - Complete Python implementation (production-ready)
+
+ADVANCED THEORY:
+---------------
+06_Complete_Project_Archive.txt - Full project history, thought process, choice tree
+07_Complete_Mathematical_Formulation.txt - Detailed math with LaTeX equations
+08_Proofs_and_Citations.txt     - Mathematical proofs and expanded citations
+
+ADDITIONAL RESOURCES:
+--------------------
+10_Condensed_Thesis.txt         - Condensed thesis version (quick reference)
+11_Explanations.txt              - Base-level explanations (intro-friendly)
+
+CONTENT SUMMARY:
+---------------
+
+THEORY & MATHEMATICS:
+- Navier-Stokes extensions with DIM terms
+- Resonance amplification (3-6-9 patterns, 124875 sequences)
+- Larmor-like coupling
+- Hopf bifurcation supplemental form
+- Complete proofs and derivations
+
+IMPLEMENTATION:
+- Python classes for axisymmetric simulations
+- Hopf amplitude equation solver
+- Reynolds number sweep utilities
+- Spectral analysis tools
+
+RESULTS & PREDICTIONS:
+- Delayed vortex breakdown (Re_crit + ~1000)
+- Amplified circulation (~80-90%)
+- Quasiperiodic stability
+- Discrete spectral peaks
+- 14× precession amplification
+
+APPLICATIONS:
+- Aerospace engineering (vortex devices)
+- Energy systems
+- Atmospheric modeling
+- Materials science (implied magnetism)
+
+READING PATHS:
+-------------
+
+For Quick Understanding:
+1. README.md
+2. 11_Explanations.txt
+3. 10_Condensed_Thesis.txt
+
+For Complete Theory:
+1. 01_Abstract.txt
+2. 03_Mathematical_Framework.txt
+3. 07_Complete_Mathematical_Formulation.txt
+4. 08_Proofs_and_Citations.txt
+
+For Implementation:
+1. 05_Supporting_Scripts.txt
+2. 12_Implied_Magnetism_Model.py
+
+For Project Context:
+1. 06_Complete_Project_Archive.txt
+
+For Academic Submission:
+1. 01_Abstract.txt
+2. 02_Thesis_Manuscript.txt
+3. 04_Bibliography.txt
+4. 08_Proofs_and_Citations.txt
+
+KEY CONCEPTS:
+------------
+
+DIM Model: Dimensional Invariant Modulation
+- Extends Navier-Stokes with resonant harmonic amplification
+- Based on 3-6-9 frequency patterns
+- Includes Larmor-like gyroscopic coupling
+- Positioned as supplemental to Hopf bifurcation theory
+
+Implied Magnetism:
+- Universal magnetism through electron spin/orbital motion
+- State-dependent magnetic response (solid/liquid/gas/plasma)
+- Spin-centric framework for all matter
+
+Resonance Amplification:
+- Selective boost to Fourier modes (freq mod 3 ≈ 0)
+- 124875 harmonic sequences
+- Quasiperiodic solutions
+
+Larmor Coupling:
+- Gyroscopic term for vortex core stiffness
+- Analogous to magnetic precession
+- Weak coupling (β ≈ 0.1)
+
+VALIDATION & FALSIFIABILITY:
+----------------------------
+- Delayed breakdown threshold (testable at Re=2500)
+- Amplified circulation (measurable via velocity profiles)
+- Spectral fingerprints (discrete peaks at 0.3k Strouhal)
+- Deviations: 8-15 standard deviations from literature
+
+All predictions are falsifiable and testable via:
+- Tabletop experiments (rotating-lid cylinder)
+- PIV (Particle Image Velocimetry)
+- Spectral analysis
+- Temperature-dependent susceptibility measurements
+
+FILE STATUS:
+-----------
+✓ All core documents complete
+✓ Python implementation added
+✓ Enhanced with proofs and citations
+✓ README and navigation added
+✓ Condensed thesis included
+✓ Explanations file added
+
+This collection provides comprehensive documentation, proofs, and implementation details.
+

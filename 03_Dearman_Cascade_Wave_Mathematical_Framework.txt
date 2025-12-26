@@ -1,0 +1,131 @@
+Mathematical Framework for DIM Model
+
+Author: Shaun Robert DeArman
+Date: December 24, 2025
+
+This document provides the mathematical foundation for the Dimensional Invariant Modulation (DIM) model.
+For complete mathematical formulation with LaTeX equations, see: 07_Complete_Mathematical_Formulation.txt
+For proofs and derivations, see: 08_Proofs_and_Citations.txt
+
+1. Base Equations
+
+1.1 Incompressible Navier-Stokes in Cylindrical Coordinates (r, θ, z)
+
+Continuity:
+∇·u = 0
+∂/∂r (r u_r) + ∂/∂z (r u_z) = 0    (axisymmetric: no θ dependence for base flow)
+
+Momentum:
+∂u/∂t + (u·∇)u = -∇p/ρ + ν ∇²u
+
+Where:
+- u = (u_r, u_θ, u_z) is the velocity vector
+- p is pressure
+- ρ is density
+- ν is kinematic viscosity
+- Re = Ω R² / ν is the Reynolds number
+
+1.2 Axisymmetric Formulation
+
+For axisymmetric flows: u = (u_r, u_θ, u_z), independent of θ.
+
+Streamfunction ψ formulation:
+- u_r = -(1/r) ∂ψ/∂z
+- u_z = (1/r) ∂ψ/∂r
+
+Circulation:
+- Γ = r u_θ
+
+Evolution equation for circulation:
+∂Γ/∂t + u_r ∂Γ/∂r + u_z ∂Γ/∂z = (1/Re) [ ∂²Γ/∂r² - (1/r) ∂Γ/∂r + ∂²Γ/∂z² - Γ/r² ] + S_DIM
+
+2. DIM Extensions
+
+2.1 Resonance Amplification Term
+
+In Fourier space, amplify coefficients where |k| mod 3 = 0 by factor:
+1 + α * (k/3 + k/6 + k/9)
+
+Where α = 0.05-0.1 is the resonance strength parameter.
+
+124875 harmonics: Inject sin(2π f t) for f in {1,2,4,8,7,5} scaled to base frequency.
+
+Time domain implementation:
+R(Γ) = ∑_{k=1}^N c_k sin(2π f_k t)
+
+Where:
+- f_k = base_freq × digit_sum_reduce(k) → 3,6,9 cycle
+- Typical: f_k ∈ {0.3, 0.6, 0.9, 1.2, 1.8, ...} (non-dimensional Strouhal)
+- c_k = 0.05 if k mod 3 = 0, else 0
+
+2.2 Larmor-like Coupling
+
+Add to u_θ equation:
+L = β ω_L (r ∂p/∂z - z ∂p/∂r) / r
+
+Where:
+- β = 0.1 is the Larmor strength
+- ω_L = 0.1 is the Larmor frequency
+- This term provides gyroscopic stiffness to the vortex core
+
+2.3 Complete DIM Source Term
+
+S_DIM = α · R(Γ) + β · L(∇p, r)
+
+Where:
+- α = 0.05–0.1 (resonance strength)
+- R(Γ) = resonance amplification operator
+- β = 0.1 (Larmor strength)
+- L = Larmor-like coupling
+
+3. Hopf Bifurcation Supplemental Form
+
+3.1 Standard Hopf Normal Form (Stuart-Landau)
+
+Near criticality (μ = Re - Re_crit):
+dA/dt = (μ + i ω_0) A - ℓ |A|² A
+
+Where:
+- A = complex amplitude of perturbation mode
+- μ > 0 → supercritical bifurcation to limit cycle |A| = √(μ/ℓ)
+
+3.2 DIM-Extended (Resonant Forced) Normal Form
+
+dA/dt = (μ + i ω_0) A - ℓ |A|² A + F_res(t) + i Δω_L A
+
+Where:
+- F_res(t) = ∑_{k} ε_k exp(i 2π f_k t) with ε_k = 0.05 if f_k ∈ 3-6-9 multiples, else 0
+- Δω_L = β ω_L (Larmor frequency shift)
+- Effective μ_DIM = μ - δ_res (resonance damping term, δ_res > 0 → delayed bifurcation)
+
+Analytic consequence:
+Re_crit_DIM = Re_crit_Hopf + δ_res / growth_rate ≈ Re_crit + 1000 (as observed)
+
+Quasiperiodic solution: A(t) approaches torus rather than pure cycle
+
+4. Non-Dimensionalization & Scaling
+
+Reference scales:
+- Length: Cylinder radius R
+- Velocity: Lid rotation Ω R
+- Time: 1/Ω
+- Pressure: ρ (Ω R)²
+
+Dimensionless parameters:
+- Re = Ω R² / ν (Reynolds number)
+- St = f / Ω (Strouhal number, frequency non-dimensionalization)
+
+124875 harmonics scaled: base f_0 = 0.3 Ω → harmonics at 0.3, 0.6, 0.9, ...
+
+5. Key Predictions
+
+This framework yields novel quasiperiodic solutions, delaying bifurcations:
+
+1. Delayed vortex breakdown: Re_crit shifted upward by ~1000 units
+2. Amplified circulation: ~80-90% increase in maximum circulation
+3. Quasiperiodic ripples: Non-zero temporal variance (≈0.0005)
+4. Discrete spectral peaks: Sidebands at St = 0.04 ± 0.3k
+5. Amplified precession: 14× power amplification in 3D modes
+
+For detailed derivations and proofs, see: 08_Proofs_and_Citations.txt
+

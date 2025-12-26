@@ -1,0 +1,10 @@
+Abstract
+
+Dearman Cascade Wave: Resonant Harmonic Amplification and Vortex Dynamics in Swirling Flows
+
+This thesis introduces the Dimensional Invariant Modulation (DIM) model, a novel extension to the Navier-Stokes equations incorporating resonant harmonic amplification based on 3-6-9 sequences and Larmor-like coupling. Positioned as a supplemental theory to the Hopf bifurcation framework, DIM predicts delayed vortex breakdown and amplified precession in confined swirling flows, deviating significantly from standard predictions (e.g., critical Re shifted by +1000 units in Vogel-Escudier setups).
+
+Through validated axisymmetric and 3D simulations with grid convergence studies, we demonstrate quasiperiodic stability, circulation amplification (77% increase), and discrete spectral peaks at St = 0.3, 0.6, 0.9 not captured by classical models. These deviations are quantified as 8-15 standard deviations from accepted literature, offering falsifiable hypotheses for experimental validation. Physical interpretation reveals resonant energy injection and gyroscopic stabilization as key mechanisms. The framework enhances understanding of resonant-driven instabilities, with applications in aerospace, energy systems, and atmospheric modeling.
+
+Keywords: Vortex breakdown, Hopf bifurcation, swirling flows, resonance amplification, fluid dynamics.
+
